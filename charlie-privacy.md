@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Privacy Policy"
-permalink: /privacy
+permalink: /charlie-privacy
 ---
 
 # Privacy Policy
