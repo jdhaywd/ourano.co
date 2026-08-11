@@ -1,10 +1,10 @@
 ---
 layout: page
-title: "Privacy Policy"
-permalink: /privacy
+title: "FlightLine Privacy Policy"
+permalink: /flightline-privacy
 ---
 
-# Privacy Policy
+# FlightLine Privacy Policy
 
 **Last updated: April 03, 2026**
 
