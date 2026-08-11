@@ -1,10 +1,10 @@
 ---
 layout: page
-title: "Privacy Policy"
+title: "Charlie Privacy Policy"
 permalink: /charlie-privacy
 ---
 
-# Privacy Policy
+# Charlie Privacy Policy
 
 **Last updated: August 06, 2026**
 
