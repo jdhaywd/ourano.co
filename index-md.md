@@ -1,8 +1,4 @@
-Here's a list of our iOS apps. 
-
-For support, use one of the links below.
-
-Need to get in touch about something else? Email us at hello@ouranoco.com.
+Need to get in touch about something not listed on this page? Email us at hello@ouranoco.com.
 
 # Charlie
 
