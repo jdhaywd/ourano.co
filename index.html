@@ -483,6 +483,32 @@ footer {
   .reveal { opacity: 1; transform: none; }
 }
 
+  .app-icon {
+  display: block;
+  width: 88px;
+  height: 88px;
+  border-radius: 22.5%; /* matches the iOS icon corner ratio */
+  margin-bottom: 1rem;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.app-store-badge {
+  display: inline-block;
+  margin-top: 1.25rem;
+  transition: opacity 0.2s ease;
+}
+
+.app-store-badge img {
+  display: block;
+  height: 44px;
+  width: auto;
+}
+
+.app-store-badge:hover {
+  opacity: 0.8;
+}
+
 ::selection {
   background: var(--ink);
   color: var(--bg);
@@ -540,7 +566,7 @@ footer {
   <section class="about reveal" id="about">
     <div class="wrap">
       <div class="section-head">
-        <div class="section-num">i.</div>
+        <!-- <div class="section-num">i.</div> -->
         <div class="section-label">About us</div>
       </div>
       <div class="about-grid">
@@ -570,36 +596,50 @@ footer {
     </div>
   </section>
 
-  <section class="apps reveal" id="apps">
+<section class="apps reveal" id="apps">
     <div class="wrap">
       <div class="section-head">
-        <div class="section-num">ii.</div>
-        <div class="section-label">In development</div>
+        <!-- <div class="section-num">ii.</div> -->
+        <div class="section-label">Our apps</div>
       </div>
-
-      <h2>Four apps, <em>currently in build.</em></h2>
+      <h2>Charlie is available now on the App Store.</h2>
       <p class="apps-intro">
-        A snapshot of what we're working on — spanning
-        professional aviation tools and thoughtful utilities for
-        everyday use. Find out more on the App Store.
+        Our first release — a flight companion built for pilots, keeping
+        the details that matter within easy reach. More aviation tools and
+        everyday utilities are on the way.
       </p>
-
       <div class="app-list">
-
         <article class="app-row">
           <div class="app-num">01</div>
           <div class="app-body">
+            <img
+              class="app-icon"
+              src="assets/charlie-icon.png"
+              alt="Charlie app icon"
+              width="88"
+              height="88"
+            />
             <span class="app-audience">For Pilots</span>
             <h3>Charlie</h3>
             <p>
               Charlie helps you prepare for and manage your flights by keeping important information at your fingertips - from your callsign to fuel management and airport notes.
             </p>
+            
+              class="app-store-badge"
+              href="https://apps.apple.com/gb/app/idYOUR_APP_ID"
+              target="_blank"
+              rel="noopener"
+              aria-label="Download Charlie on the App Store"
+            >
+              <img
+                src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-gb?size=250x83"
+                alt="Download on the App Store"
+              />
+            </a>
           </div>
           <span class="app-status">Available now</span>
         </article>
-
         <!--
-
         <article class="app-row">
           <div class="app-num">01</div>
           <div class="app-body">
@@ -615,7 +655,6 @@ footer {
           </div>
           <span class="app-status">In development</span>
         </article>
-
         <article class="app-row">
           <div class="app-num">02</div>
           <div class="app-body">
@@ -630,7 +669,6 @@ footer {
           </div>
           <span class="app-status">In development</span>
         </article>
-
         <article class="app-row">
           <div class="app-num">03</div>
           <div class="app-body">
@@ -645,7 +683,6 @@ footer {
           </div>
           <span class="app-status">In development</span>
         </article>
-
         <article class="app-row">
           <div class="app-num">04</div>
           <div class="app-body">
@@ -660,9 +697,7 @@ footer {
           </div>
           <span class="app-status">In development</span>
         </article>
-
         -->
-
       </div>
     </div>
   </section>
@@ -670,7 +705,7 @@ footer {
   <section class="approach reveal" id="approach">
     <div class="wrap">
       <div class="section-head">
-        <div class="section-num">ii.</div>
+        <!-- <div class="section-num">ii.</div> -->
         <div class="section-label">How we work</div>
       </div>
 
@@ -711,7 +746,7 @@ footer {
   <section class="contact reveal" id="contact">
     <div class="wrap">
       <div class="section-head">
-        <div class="section-num">iii.</div>
+        <!-- <div class="section-num">iii.</div> -->
         <div class="section-label">Get in touch</div>
       </div>
 
