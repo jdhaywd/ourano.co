@@ -6,6 +6,6 @@ permalink: /support
 
 # Support
 
-**Last updated: April 03, 2026**
+**Last updated: August 31, 2026**
 
-For support, contact flightline@ouranoco.com.
+For support, contact support@ouranoco.com.
