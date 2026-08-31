@@ -20,7 +20,7 @@ Roster Radar retrieves your roster directly from your airline's own systems on y
 
 Roster Radar has no user account system — no account, username, or sign-in with us. It is intended for flight crew authorised to access their own roster, and you should use it in accordance with your airline's own IT and security policies.
 
-Everything the app stores is held in local device storage (iOS `UserDefaults`) and never leaves your device to reach our servers:
+Everything the app stores is held in local device storage and never leaves your device to reach our servers:
 
 - **Staff number** — saved locally so you do not need to re-enter it each time you open the app.
 - **Cached roster data** — trip identifiers, flight numbers, routes, and departure and arrival times retrieved from your airline's rostering system, cached locally so it can be displayed on subsequent opens without a network request.
