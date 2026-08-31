@@ -15,7 +15,7 @@ This Privacy Policy describes how Ouranoco ('Ouranoco', 'we', 'us', or 'our') ac
 
 This is our **company-wide policy**. It applies to every Ouranoco app and sets out the commitments, legal bases, and rights that are common to all of them.
 
-Because our apps do very different things, each one also has its own **app-specific privacy notice** that sets out exactly what that app collects, where it goes, who processes it, and how long it is kept. **You should read this policy together with the notice for the app you use.** Where an app-specific notice conflicts with this policy, the app-specific notice governs for that app.
+Because our apps do different things in different ways, each one also has its own **app-specific privacy notice** that sets out exactly what that app collects, where it goes, who processes it, and how long it is kept. **You should read this policy together with the notice for the app you use.** Where an app-specific notice conflicts with this policy, the app-specific notice governs for that app.
 
 | App | App-specific privacy notice |
 |-----|------------------------------|
