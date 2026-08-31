@@ -31,8 +31,6 @@ When you tap "Look Up Roster", the app sends your staff number — and, if requi
 
 Nothing is collected automatically. We collect no device identifiers, IP addresses, usage statistics, or telemetry, and we never see your staff number, your roster, or your password. The legal bases in the [Ouranoco Privacy Policy](/privacy#5-what-legal-bases-do-we-rely-on-to-process-your-personal-information) therefore apply only to this local, on-device processing — there is no server-side processing by Ouranoco to justify.
 
-<!-- REVIEW: The staff number and roster cache sit in iOS UserDefaults, which is not encrypted beyond iOS Data Protection at rest and is included in device backups. Consider moving the staff number to the Keychain for consistency with FlightLine, and update this notice if you do. -->
-
 ---
 
 ## A2. Who Is Your Information Shared With?

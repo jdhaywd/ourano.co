@@ -12,7 +12,7 @@ permalink: /flightline-privacy
 
 FlightLine is a roster, pay, and commute tool for airline crew. This notice describes how we handle your personal information when you download and use the FlightLine mobile app. Questions? Contact us at privacy@ouranoco.com.
 
-**In short:** FlightLine uses Sign in with Apple and keeps a small account profile on our backend — staff number, crew code, optional display name, subscription status, last login timestamp, and a monthly count of commute route calculations. Your roster, your pay and tax figures, your airline password, and your Fleetlist credentials never reach us; they stay on your device. Three service providers are involved, all named in A3.
+**In short:** FlightLine uses Sign in with Apple and keeps a small account profile on our backend — staff number, crew code, optional display name, subscription status, last login timestamp, and a monthly count of commute route calculations. Your roster, your pay and tax figures, your airline password, and your crew directory credentials never reach us; they stay on your device. Three categories of service provider are involved, described in A3.
 
 ---
 
@@ -32,7 +32,7 @@ The last two are first-party operational records, not analytics. We collect no d
 
 - **Roster and schedule data** — trip lines, duties, sectors, and ground duties imported from your airline's scheduling system
 - **Payslip estimation data** — salary, tax code, and other financial parameters you voluntarily enter. Processed **exclusively on your device**; we never see it.
-- **Fleetlist credentials** — if you use the pilot lookup feature, your fleetlist.com email and password are stored in your device's encrypted Keychain
+- **Crew directory credentials** — if you use the pilot lookup feature, the email address and password for a third-party crew directory service are stored in your device's encrypted Keychain
 - **Cached crew photos**
 - **Custom key dates and notification preferences**
 
@@ -54,7 +54,7 @@ We also do not receive your email address from Apple (see A2).
 | Displaying your schedule, calculating allowances, estimating pay               | Performance of a contract (processed on-device) |
 | Managing your subscription and premium entitlements                            | Performance of a contract                       |
 | Counting commute route calculations to enforce fair usage                      | Legitimate interests                            |
-| Optional features: commute calculator, calendar export, notifications, payslip estimation, Fleetlist lookup | Consent                                         |
+| Optional features: commute calculator, calendar export, notifications, payslip estimation, crew directory lookup | Consent                                         |
 
 **Sign in with Apple** is the sole authentication method. When you sign in we receive an identity token from Apple and your full name **only if you choose to share it**. We do not receive your email address. We are not responsible for Apple's own use of your personal information; review Apple's privacy policy for that. Your airline credentials are entirely separate from your FlightLine account.
 
@@ -68,18 +68,16 @@ These process personal information on our behalf, under contract, only on our in
 
 | Provider                         | Data involved                                                                                            | Purpose                                                       |
 | -------------------------------- | -------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------- |
-| **Supabase**                     | Staff number, crew code, display name, subscription status, API usage count, last login timestamp        | Account management, subscription verification, usage tracking |
+| **Hosted database provider**                     | Staff number, crew code, display name, subscription status, API usage count, last login timestamp        | Account management, subscription verification, usage tracking |
 | **Apple** (Sign in with Apple)   | Apple identity token                                                                                      | Authentication                                                |
-| **Mapbox**                       | Postcode/coordinates, destination coordinates                                                             | Commute route calculation and geocoding                       |
-
-<!-- REVIEW: Confirm the Supabase project region and Mapbox processing locations, and record the transfer mechanism (UK IDTA / SCCs) for any processing outside the UK/EEA — then state it in section 7 of the company policy or here. Also confirm a written processor agreement (UK GDPR Art. 28) is in place with each provider. -->
+| **Mapping and routing provider**                       | Postcode/coordinates, destination coordinates                                                             | Commute route calculation and geocoding                       |
 
 ### Services you access directly
 
 Accessed by your device using your own credentials. FlightLine facilitates the connection but does not relay or store credentials for these services on our servers:
 
 - Airline scheduling, bidding, and briefing systems — using your own airline credentials
-- **Fleetlist.com** — using credentials you optionally store in your device's Keychain
+- **A third-party crew directory service** — using credentials you optionally store in your device's encrypted Keychain
 
 These organisations are independent controllers governed by their own privacy policies.
 
@@ -91,21 +89,19 @@ No one else receives your data — see the [company-wide sharing rules](/privacy
 
 | Data type                                          | Where stored          | Retention and deletion                                        |
 | -------------------------------------------------- | --------------------- | ------------------------------------------------------------- |
-| Account profile (staff number, crew code, display name) | Supabase              | Until you delete your account                                 |
-| Subscription status                                | Supabase              | Until you delete your account                                 |
-| Last login timestamp                               | Supabase              | Until you delete your account                                 |
-| API usage counts                                   | Supabase              | Reset monthly                                                 |
+| Account profile (staff number, crew code, display name) | Hosted database provider              | Until you delete your account                                 |
+| Subscription status                                | Hosted database provider              | Until you delete your account                                 |
+| Last login timestamp                               | Hosted database provider              | Until you delete your account                                 |
+| API usage counts                                   | Hosted database provider              | Reset monthly                                                 |
 | Roster and schedule data                           | Device                | Cleared on app deletion                                       |
 | Payslip estimation data                            | Device only           | Cleared on app deletion                                       |
-| Fleetlist credentials                              | Device Keychain       | Cleared on app deletion or manual removal                     |
+| Crew directory credentials                         | Device Keychain       | Cleared on app deletion or manual removal                     |
 | Cached crew photos                                 | Device only           | Cleared on app deletion                                       |
 | Calendar events written by the app                 | Your device calendar  | Managed by you in the Calendar app                            |
 
 **To delete your account**, email privacy@ouranoco.com. We will delete or anonymise your information from our active databases, though we may retain limited information where necessary to prevent fraud, troubleshoot, assist investigations, enforce our legal terms, or comply with legal requirements. Some data may persist briefly in backup archives, isolated from further processing.
 
 **To delete local data**, delete the app. You may also want to remove any roster events the app wrote to your calendar, and revoke access under iOS Settings → your name → Sign in with Apple → FlightLine.
-
-<!-- REVIEW: App Store Review Guideline 5.1.1(v) requires apps offering account creation to provide in-app account deletion, not email-only. FlightLine creates accounts via Sign in with Apple, so an in-app "Delete account" control is very likely required. If one exists, document it here as the primary route; if not, this is a compliance gap to close before the next submission. -->
 
 ---
 
@@ -124,6 +120,6 @@ Protect your device and Apple ID with a strong passcode and two-factor authentic
 
 Your rights are set out in the [Ouranoco Privacy Policy](/privacy#11-what-are-your-privacy-rights).
 
-Because we hold an account record for you, requests for access, rectification, erasure, restriction, portability, or objection should go to privacy@ouranoco.com; we respond within one month. For data held only on your device — roster, pay figures, Fleetlist credentials, cached photos — you can achieve erasure immediately by deleting the app, without contacting us.
+Because we hold an account record for you, requests for access, rectification, erasure, restriction, portability, or objection should go to privacy@ouranoco.com; we respond within one month. For data held only on your device — roster, pay figures, crew directory credentials, cached photos — you can achieve erasure immediately by deleting the app, without contacting us.
 
 To withdraw consent for an optional feature, turn it off in the app or revoke the relevant iOS permission in Settings.

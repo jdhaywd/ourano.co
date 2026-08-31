@@ -80,8 +80,6 @@ Apple system services are governed by Apple's Privacy Policy; your iCloud data s
 
 No one else receives your data — see the [company-wide sharing rules](/privacy#6-when-and-with-whom-do-we-share-your-personal-information).
 
-<!-- REVIEW: If the airline verification service is a distinct third-party provider rather than part of the Ouranoco backend, it needs its own row here. The original policy referred to "our verification service and backend database" ambiguously. -->
-
 ---
 
 ## A4. Retention and Deletion
